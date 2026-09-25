@@ -118,9 +118,39 @@ header {
   padding-bottom: 115px;
 }
 
-.hero-content {
-  max-width: 850px;
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 750px) minmax(0, 1fr);
+  align-items: center;
 }
+
+.hero-content {
+  width: 100%;
+  max-width: 750px;
+}
+
+.hero-visual {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-visual-image {
+  width: 100%;
+  max-width: none;
+}
+
+.hero-visual-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* --------------------------------------------------
+   HERO TYPOGRAPHY
+-------------------------------------------------- */
 
 .eyebrow {
   margin: 0 0 24px;
@@ -139,6 +169,7 @@ header {
   font-family: "Playfair Display", serif;
 
   font-size: clamp(4rem, 8vw, 7.5rem);
+
   line-height: 0.92;
 
   font-weight: 500;
@@ -173,6 +204,7 @@ header {
 
 .tags {
   display: flex;
+
   flex-wrap: wrap;
 
   gap: 8px;
@@ -186,11 +218,140 @@ header {
   border: 1px solid var(--line);
 
   font-family: "DM Mono", monospace;
+
   font-size: 0.62rem;
 
   color: var(--muted);
 
   background: var(--bg);
+}
+
+/* --------------------------------------------------
+   DEVELOPMENT STATUS
+-------------------------------------------------- */
+
+.development-note {
+  display: grid;
+
+  grid-template-columns: auto 1fr;
+
+  gap: 16px;
+
+  max-width: 720px;
+
+  margin-top: 70px;
+
+  padding: 20px 22px;
+
+  border-left: 3px solid var(--accent);
+
+  background: var(--surface);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+
+  margin-top: 5px;
+
+  border-radius: 50%;
+
+  background: var(--accent);
+}
+
+.development-note strong {
+  display: block;
+
+  margin-bottom: 6px;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 0.65rem;
+
+  letter-spacing: 0.05em;
+
+  color: var(--accent);
+}
+
+.development-note p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 0.8rem;
+
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------
+   RESPONSIVE
+-------------------------------------------------- */
+
+/*
+   Keep the visual beside the content until the viewport
+   is actually too narrow for both columns.
+*/
+
+@media (max-width: 1050px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr) 320px;
+
+    gap: 25px;
+  }
+
+  .hero-visual {
+    min-width: 280px;
+  }
+
+  .hero-visual-image {
+    max-width: 320px;
+  }
+}
+
+/*
+   Only stack once the two-column layout would
+   genuinely compromise the content.
+*/
+
+@media (max-width: 800px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .hero-visual {
+    justify-content: flex-start;
+
+    min-width: 0;
+  }
+
+  .hero-visual-image {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .hero h1 {
+    font-size: 3.8rem;
+  }
+
+  .hero h2 {
+    font-size: 1.1rem;
+  }
+
+  .hero-description {
+    font-size: 0.88rem;
+  }
+
+  .development-note {
+    margin-top: 50px;
+  }
 }
 
 /* --------------------------------------------------
