@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="ClusterPilot — HPC cluster management across Apple devices."
+    />
+
+    <title>ClusterPilot — HPC Cluster Management</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="container nav">
+        <a href="/dev/" class="back-link">← AMIRHOSSEIN MASOUDNEZHAD</a>
+
+        <div class="nav-links">
+          <a href="#overview">Overview</a>
+          <a href="#features">Features</a>
+          <a href="#architecture">Architecture</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero container">
+        <div class="hero-content">
+          <p class="eyebrow">APPLE PLATFORMS · HPC</p>
+
+          <h1>Cluster<span>Pilot</span></h1>
+
+          <h2>HPC cluster management across Apple devices.</h2>
+
+          <p class="hero-intro">
+            An application for managing HPC clusters, enabling users to monitor
+            and submit jobs, manage cluster files, configure batch scripts, and
+            handle essential cluster operations from iPhone, iPad, and Mac.
+          </p>
+
+          <div class="tags">
+            <span>Swift</span>
+            <span>SwiftUI</span>
+            <span>SLURM</span>
+            <span>REST API</span>
+            <span>PHP</span>
+            <span>Linux</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img
+            src="images/dashboard.png"
+            alt="ClusterPilot cluster dashboard"
+          />
+        </div>
+      </section>
+
+      <!-- OVERVIEW -->
+      <section id="overview" class="section container">
+        <div class="section-label">
+          <span>01</span>
+          <p>OVERVIEW</p>
+        </div>
+
+        <div class="overview-grid">
+          <h2>
+            HPC workflows,<br />
+            in one interface.
+          </h2>
+
+          <div>
+            <p>
+              ClusterPilot brings common HPC workflows into a native interface,
+              providing access to cluster jobs, files, terminals, and batch
+              configuration without relying entirely on a traditional
+              command-line workflow.
+            </p>
+
+            <div class="feature-list">
+              <div>
+                <span>01</span>
+                <strong>Jobs</strong>
+                <p>
+                  Monitor running and pending SLURM jobs and manage your jobs.
+                </p>
+              </div>
+
+              <div>
+                <span>02</span>
+                <strong>Submit Jobs</strong>
+                <p>
+                  Configure SLURM batch parameters and submit jobs directly.
+                </p>
+              </div>
+
+              <div>
+                <span>03</span>
+                <strong>Files</strong>
+                <p>
+                  Browse directories and access files stored on the cluster.
+                </p>
+              </div>
+
+              <div>
+                <span>04</span>
+                <strong>Terminal</strong>
+                <p>
+                  Access the cluster terminal when direct command-line
+                  interaction is needed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section id="features" class="section container">
+        <div class="section-label">
+          <span>02</span>
+          <p>JOB MANAGEMENT</p>
+        </div>
+
+        <div class="feature-intro">
+          <h2>Monitor jobs<br />from anywhere.</h2>
+
+          <p>
+            View running and pending SLURM jobs, track job IDs and runtime,
+            switch between all jobs and your own jobs, and cancel jobs when
+            needed.
+          </p>
+        </div>
+
+        <div class="screenshot-grid two">
+          <figure>
+            <img src="images/jobs.png" alt="ClusterPilot jobs list" />
+          </figure>
+
+          <figure>
+            <img src="images/my-jobs.png" alt="ClusterPilot My Jobs view" />
+          </figure>
+        </div>
+
+        <div class="screenshot-detail">
+          <figure>
+            <img
+              src="images/cancel-job.png"
+              alt="ClusterPilot job cancellation confirmation"
+            />
+          </figure>
+
+          <div>
+            <p class="project-type">JOB CONTROL</p>
+            <h3>Manage submitted workloads.</h3>
+            <p>
+              ClusterPilot provides direct access to job state and basic job
+              control operations through the SLURM interface.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- BATCH -->
+      <section class="section container">
+        <div class="section-label">
+          <span>03</span>
+          <p>BATCH CONFIGURATION</p>
+        </div>
+
+        <div class="feature-intro">
+          <h2>Build and submit<br />batch jobs.</h2>
+
+          <p>
+            Configure common SLURM directives through a structured interface and
+            submit the resulting batch script directly from the app.
+          </p>
+        </div>
+
+        <div class="batch-layout">
+          <div class="batch-copy">
+            <div class="batch-item">
+              <span>PARTITION</span>
+              <strong>b4</strong>
+            </div>
+
+            <div class="batch-item">
+              <span>ACCOUNT</span>
+              <strong>astro</strong>
+            </div>
+
+            <div class="batch-item">
+              <span>CONSTRAINT</span>
+              <strong>ib</strong>
+            </div>
+
+            <div class="batch-item">
+              <span>TIME</span>
+              <strong>02:00:00</strong>
+            </div>
+
+            <div class="batch-item">
+              <span>QoS</span>
+              <strong>normal</strong>
+            </div>
+          </div>
+
+          <div class="batch-copy">
+            <div class="batch-item">
+              <span>NODES</span>
+              <strong>1</strong>
+            </div>
+
+            <div class="batch-item">
+              <span>TASKS PER NODE</span>
+              <strong>28</strong>
+            </div>
+
+            <div class="batch-item">
+              <span>MEMORY PER CPU</span>
+              <strong>2G</strong>
+            </div>
+
+            <div class="batch-item">
+              <span>JOB NAME</span>
+              <strong>ggt</strong>
+            </div>
+
+            <div class="batch-item">
+              <span>OUTPUT / ERROR</span>
+              <strong>outputs/job_%N-%j</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="screenshot-grid two batch-screens">
+          <figure>
+            <img
+              src="images/job-batch-top.png"
+              alt="ClusterPilot batch script configuration"
+            />
+          </figure>
+
+          <figure>
+            <img
+              src="images/job-batch-bottom.png"
+              alt="ClusterPilot batch script configuration parameters"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- FILES -->
+      <section class="section container">
+        <div class="section-label">
+          <span>04</span>
+          <p>FILES & OUTPUT</p>
+        </div>
+
+        <div class="feature-intro">
+          <h2>Work with files<br />and live output.</h2>
+
+          <p>
+            Browse cluster directories, access simulation outputs, and view live
+            text output directly from the application.
+          </p>
+        </div>
+
+        <div class="screenshot-grid two">
+          <figure>
+            <img
+              src="images/files.png"
+              alt="ClusterPilot cluster file browser"
+            />
+          </figure>
+
+          <figure>
+            <img
+              src="images/live-output.png"
+              alt="ClusterPilot live output viewer"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- ARCHITECTURE -->
+      <section id="architecture" class="section container">
+        <div class="section-label">
+          <span>05</span>
+          <p>TECHNICAL ARCHITECTURE</p>
+        </div>
+
+        <div class="architecture-grid">
+          <div>
+            <h2>
+              Built across<br />
+              mobile, backend,<br />
+              and HPC systems.
+            </h2>
+          </div>
+
+          <div class="architecture-content">
+            <p>
+              ClusterPilot connects a native Apple client with a backend API
+              layer and the underlying HPC environment.
+            </p>
+
+            <div class="architecture-flow">
+              <div>
+                <span>CLIENT</span>
+                <strong>Swift · SwiftUI</strong>
+              </div>
+
+              <div class="arrow">→</div>
+
+              <div>
+                <span>API</span>
+                <strong>PHP · REST</strong>
+              </div>
+
+              <div class="arrow">→</div>
+
+              <div>
+                <span>CLUSTER</span>
+                <strong>Linux · SSH · SLURM</strong>
+              </div>
+            </div>
+
+            <div class="technology-grid">
+              <div>
+                <span>Mobile</span>
+                <strong>Swift / SwiftUI</strong>
+              </div>
+
+              <div>
+                <span>Backend</span>
+                <strong>PHP / REST API</strong>
+              </div>
+
+              <div>
+                <span>HPC</span>
+                <strong>SLURM / Linux</strong>
+              </div>
+
+              <div>
+                <span>Infrastructure</span>
+                <strong>SSH / Cluster Systems</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CLOSING -->
+      <section class="closing container">
+        <p class="eyebrow">CLUSTERPILOT</p>
+
+        <h2>
+          Software for working<br />
+          with technical systems.
+        </h2>
+
+        <a class="button" href="/dev/"> Back to my work <span>→</span> </a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <span>© 2026 Amirhossein Masoudnezhad</span>
+        <a href="/dev/">Developer Page ↗</a>
+      </div>
+    </footer>
+  </body>
+</html>
