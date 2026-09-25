@@ -7,7 +7,6 @@
   --muted: #697177;
   --line: #d9ddde;
   --accent: #315f72;
-  --accent-light: #e5eef1;
   --terminal: #151b1e;
   --terminal-text: #d7dee1;
   --max-width: 1160px;
@@ -51,38 +50,30 @@ header {
   height: 76px;
   display: flex;
   align-items: center;
-  gap: 40px;
 }
 
 .name {
   font-family: "DM Mono", monospace;
-  font-size: 0.9rem;
+  font-size: 0.78rem;
   font-weight: 500;
   color: var(--accent);
 }
 
 .nav-links {
   display: flex;
-  gap: 28px;
+  gap: 30px;
   margin-left: auto;
 }
 
-.nav-links a,
-.nav-right a {
+.nav-links a {
   font-family: "DM Mono", monospace;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   color: var(--muted);
   transition: color 0.2s ease;
 }
 
-.nav-links a:hover,
-.nav-right a:hover {
+.nav-links a:hover {
   color: var(--accent);
-}
-
-.nav-right {
-  padding-left: 28px;
-  border-left: 1px solid var(--line);
 }
 
 /* --------------------------------------------------
@@ -94,12 +85,12 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 80px;
-  padding-bottom: 90px;
+  padding-top: 70px;
+  padding-bottom: 85px;
 }
 
 .hero-content {
-  max-width: 920px;
+  max-width: 900px;
 }
 
 .eyebrow,
@@ -115,8 +106,8 @@ header {
 .hero h1 {
   margin: 24px 0 28px;
   font-family: "Playfair Display", serif;
-  font-size: clamp(4rem, 8vw, 7.4rem);
-  line-height: 0.98;
+  font-size: clamp(4rem, 7.2vw, 6.7rem);
+  line-height: 0.99;
   font-weight: 500;
   letter-spacing: -0.045em;
 }
@@ -129,7 +120,7 @@ header {
   max-width: 620px;
   margin: 0;
   color: var(--muted);
-  font-size: 1.15rem;
+  font-size: 1.08rem;
   line-height: 1.7;
 }
 
@@ -137,7 +128,7 @@ header {
   display: flex;
   align-items: center;
   gap: 28px;
-  margin-top: 42px;
+  margin-top: 40px;
 }
 
 .button {
@@ -153,6 +144,10 @@ header {
     background 0.2s ease,
     color 0.2s ease,
     transform 0.2s ease;
+}
+
+.button span {
+  margin-left: 8px;
 }
 
 .button:hover {
@@ -569,7 +564,7 @@ footer a:hover {
   }
 
   .nav-links {
-    display: none;
+    gap: 18px;
   }
 
   .hero {
@@ -617,6 +612,26 @@ footer a:hover {
 }
 
 @media (max-width: 550px) {
+  .container {
+    width: min(calc(100% - 30px), var(--max-width));
+  }
+
+  .nav {
+    height: 68px;
+  }
+
+  .name {
+    font-size: 0.68rem;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 0.62rem;
+  }
+
   .hero {
     min-height: 600px;
   }
