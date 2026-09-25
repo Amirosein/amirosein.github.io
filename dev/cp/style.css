@@ -857,7 +857,7 @@ header {
 
   gap: 100px;
 
-  align-items: start;
+  align-items: end;
 }
 
 .development-grid h2 {
