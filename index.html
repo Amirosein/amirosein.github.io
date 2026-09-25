@@ -1,96 +1,122 @@
 <!doctype html>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta
       name="description"
       content="Amirhossein Masoudnezhad — Astrophysics & Cosmology"
     />
+
     <title>Amirhossein Masoudnezhad</title>
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images/icon.png" />
   </head>
 
   <body>
+    <!-- NAVIGATION -->
+
     <header>
       <nav class="container nav">
-        <a href="#" class="name">Amirhossein Masoudnezhad</a>
+        <a href="#" class="name"> Amirhossein Masoudnezhad </a>
 
         <div class="nav-links">
           <a href="#about">About</a>
           <a href="#research">Research</a>
+          <a href="#projects">Projects</a>
           <a href="#publications">Publications</a>
           <a href="#education">Education</a>
           <a href="#contact">Contact</a>
+          <!-- <a href="/dev/">Developer ↗</a> -->
         </div>
       </nav>
     </header>
 
     <main>
       <!-- HERO -->
+
       <section class="hero container">
-        <div class="hero-text">
+        <div class="hero-content">
           <p class="eyebrow">ASTROPHYSICS & COSMOLOGY</p>
 
           <h1>
             Amirhossein<br />
-            Masoudnezhad
+            <span>Masoudnezhad</span>
           </h1>
 
           <p class="intro">
             Master's student in Astrophysics & Cosmology at the University of
-            Bologna, interested in observational cosmology, cosmological
-            simulations, and scientific computing.
+            Bologna, working across observational astronomy, cosmological
+            simulations, scientific computing, and high-performance computing.
           </p>
+
+          <div class="hero-meta">
+            <span>University of Bologna</span>
+            <span>Italy</span>
+          </div>
 
           <div class="links">
             <a href="#research">Research →</a>
+            <a href="#publications">Publications →</a>
             <a href="cv.pdf" target="_blank">CV →</a>
-            <a href="https://scholar.google.com/" target="_blank"
-              >Google Scholar →</a
-            >
+          </div>
+        </div>
+
+        <!-- YOUR PHOTO -->
+
+        <div class="hero-photo">
+          <img src="dev/images/profile.JPG" alt="Amirhossein Masoudnezhad" />
+
+          <div class="photo-caption">
+            <span>AMIRHOSSEIN MASOUDNEZHAD</span>
+            <span>ASTROPHYSICS · COSMOLOGY</span>
           </div>
         </div>
       </section>
 
       <!-- ABOUT -->
+
       <section id="about" class="section container">
         <div class="section-title">
           <span>01</span>
           <h2>About</h2>
         </div>
 
-        <div class="section-body about-grid">
+        <div class="about-grid">
           <div>
             <p class="large">
-              I am a Master's student in Astrophysics and Cosmology at the
-              University of Bologna.
+              I work at the intersection of physics, computation, and
+              astronomical data.
             </p>
           </div>
 
-          <div>
+          <div class="section-body">
             <p>
-              My interests lie in observational cosmology and cosmological
-              simulations, with a particular interest in numerical methods,
-              scientific computing, and high-performance computing.
+              I am a Master's student in Astrophysics & Cosmology at the
+              University of Bologna, with research experience in observational
+              astronomy, cosmological simulations, numerical methods, and
+              high-performance computing.
             </p>
 
             <p>
-              My previous work has involved astronomical observations across
-              optical, radio, and gamma-ray wavelengths, as well as
-              machine-learning methods for astronomical data analysis.
+              My current interests include computational cosmology, large-scale
+              structure, cosmological simulations, and scientific software
+              development.
             </p>
 
             <p>
-              I enjoy combining physics, computational methods, and software
-              development to approach complex scientific problems.
+              My previous work has involved optical spectroscopy, radio
+              astronomy, gamma-ray observations, and machine-learning methods
+              for astronomical data analysis.
             </p>
           </div>
         </div>
       </section>
 
       <!-- RESEARCH -->
+
       <section id="research" class="section container">
         <div class="section-title">
           <span>02</span>
@@ -100,108 +126,182 @@
         <div class="research-grid">
           <article>
             <span class="number">01</span>
-            <h3>Observational Cosmology</h3>
+
+            <h3>Computational Cosmology & Large-Scale Structure</h3>
+
             <p>
-              Analysis of astronomical observations across multiple wavelengths
-              and extraction of physical information from astronomical data.
+              Computational approaches to cosmology and the study of large-scale
+              cosmic structure.
             </p>
           </article>
 
           <article>
             <span class="number">02</span>
-            <h3>Cosmological Simulations</h3>
+
+            <h3>Cosmological Simulations & Numerical Methods</h3>
+
             <p>
-              Numerical simulations of large-scale cosmic structure and
-              computational approaches to cosmological problems.
+              Numerical simulations, initial conditions, particle resolution
+              management, and computational methods for cosmological
+              simulations.
             </p>
           </article>
 
           <article>
             <span class="number">03</span>
-            <h3>Early-Universe Physics</h3>
-            <p>Early-Universe physics and cosmological perturbations.</p>
+
+            <h3>High-Performance Computing</h3>
+
+            <p>
+              Parallel computing, HPC workflows, scientific software, and
+              computational environments for large-scale simulations.
+            </p>
           </article>
 
           <article>
             <span class="number">04</span>
-            <h3>Scientific Computing & HPC</h3>
+
+            <h3>Computational Astrophysics & Data Analysis</h3>
+
             <p>
-              Numerical methods, scientific software development, parallel
-              computing, and high-performance computing environments.
+              Astronomical data analysis across multiple wavelengths, including
+              spectroscopy, radio, and gamma-ray observations, together with
+              machine-learning methods.
             </p>
           </article>
         </div>
       </section>
 
-      <!-- SELECTED PROJECTS -->
-      <section class="section container">
+      <!-- RESEARCH PROJECTS -->
+
+      <section id="projects" class="section container">
         <div class="section-title">
           <span>03</span>
-          <h2>Selected Research</h2>
+          <h2>Selected Work</h2>
         </div>
 
         <div class="projects">
-          <article class="project">
-            <div class="project-meta">ASTRONOMICAL SPECTROSCOPY</div>
-            <h3>Optical Spectroscopy of Globular Cluster Giant Stars</h3>
-            <p>
-              Reduced and normalized high-resolution optical spectra, measured
-              radial velocities, and derived stellar abundances. Results were
-              validated against reference cluster values using SLAB and
-              SALVADOR.
-            </p>
-          </article>
+          <!-- ZINCO -->
 
           <article class="project">
-            <div class="project-meta">OBSERVATIONAL ASTRONOMY</div>
-            <h3>Observation Planning for Bootes II RGB Stars</h3>
-            <p>
-              Designed an observing strategy for RGB stars in an ultra-faint
-              dwarf galaxy, optimizing telescope and instrument selection,
-              exposure times, and observing conditions.
-            </p>
+            <div class="project-meta">COSMOLOGICAL SIMULATIONS</div>
+
+            <div>
+              <h3>Zoomed Initial Conditions — ZInCo</h3>
+
+              <p>
+                Extended the ZInCo scientific software for generating
+                multi-resolution cosmological initial conditions, including
+                improved particle merging and resolution management. Tested and
+                validated the implementation across different simulation
+                configurations.
+              </p>
+
+              <span class="project-tools">
+                C/C++ · Cosmological Simulations · HPC
+              </span>
+            </div>
           </article>
 
-          <article class="project">
-            <div class="project-meta">RADIO ASTRONOMY</div>
-            <h3>Calibrating and Imaging VLA Data of RBS797</h3>
-            <p>
-              Performed full calibration and imaging of VLA continuum data using
-              CASA. Produced cleaned radio images and measured flux densities
-              and spectral indices.
-            </p>
-          </article>
-
-          <article class="project">
-            <div class="project-meta">HIGH-ENERGY ASTROPHYSICS</div>
-            <h3>Fermi-LAT Analysis of TXS 0506+056</h3>
-            <p>
-              Processed five years of gamma-ray data using Fermipy, generating
-              counts maps, light curves, and spectral energy distributions.
-            </p>
-          </article>
+          <!-- DUSTY STARS -->
 
           <article class="project">
             <div class="project-meta">MACHINE LEARNING</div>
-            <h3>Machine-Learning Classification of Variable Stars</h3>
-            <p>
-              Developed automated pipelines for light-curve analysis and
-              implemented classification algorithms for variable star types.
-            </p>
+
+            <div>
+              <h3>ML Classification of Dusty Stellar Sources</h3>
+
+              <p>
+                Developed machine-learning methods for classifying dusty stellar
+                sources using spectroscopic and multi-wavelength observations,
+                with automated data-analysis and classification pipelines.
+              </p>
+
+              <span class="project-tools">
+                Machine Learning · Spectroscopy · Data Analysis
+              </span>
+            </div>
           </article>
+
+          <!-- GADGET -->
 
           <article class="project">
             <div class="project-meta">HPC · N-BODY SIMULATIONS</div>
-            <h3>Strong Scaling of Gadget-2 Simulations</h3>
-            <p>
-              Ran cosmological N-body simulations on multi-core HPC clusters and
-              evaluated strong-scaling performance and parallel efficiency.
-            </p>
+
+            <div>
+              <h3>Gadget-2 N-Body Simulations</h3>
+
+              <p>
+                Ran cosmological N-body simulations on multi-core HPC clusters
+                and evaluated strong-scaling performance and parallel
+                efficiency.
+              </p>
+
+              <span class="project-tools"> Gadget-2 · MPI · HPC </span>
+            </div>
+          </article>
+
+          <!-- SPECTROSCOPY -->
+
+          <article class="project">
+            <div class="project-meta">OPTICAL ASTRONOMY</div>
+
+            <div>
+              <h3>Optical Spectroscopy of Globular Cluster Giant Stars</h3>
+
+              <p>
+                Reduced and analyzed high-resolution optical spectra to measure
+                radial velocities and stellar abundances, validating results
+                against reference cluster values using SLAB and SALVADOR.
+              </p>
+
+              <span class="project-tools">
+                Optical Spectroscopy · SLAB · SALVADOR
+              </span>
+            </div>
+          </article>
+
+          <!-- RADIO -->
+
+          <article class="project">
+            <div class="project-meta">RADIO ASTRONOMY</div>
+
+            <div>
+              <h3>Calibrating and Imaging VLA Data of RBS797</h3>
+
+              <p>
+                Calibrated and imaged VLA continuum data using CASA, measuring
+                radio source properties and spectral characteristics.
+              </p>
+
+              <span class="project-tools"> VLA · CASA · Radio Astronomy </span>
+            </div>
+          </article>
+
+          <!-- FERMI -->
+
+          <article class="project">
+            <div class="project-meta">HIGH-ENERGY ASTROPHYSICS</div>
+
+            <div>
+              <h3>Fermi-LAT Analysis of TXS 0506+056</h3>
+
+              <p>
+                Analyzed five years of Fermi-LAT gamma-ray data using Fermipy,
+                generating light curves and spectral energy distributions to
+                study source variability.
+              </p>
+
+              <span class="project-tools">
+                Fermi-LAT · Fermipy · Gamma-Ray Astronomy
+              </span>
+            </div>
           </article>
         </div>
       </section>
 
       <!-- PUBLICATIONS -->
+
       <section id="publications" class="section container">
         <div class="section-title">
           <span>04</span>
@@ -211,35 +311,41 @@
         <div class="publications">
           <article>
             <span>2025</span>
+
             <div>
               <h3>
                 Dusty stellar sources classification by implementing machine
                 learning methods based on spectroscopic observations in the
                 Magellanic Clouds.
               </h3>
+
               <p>The Astrophysical Journal</p>
             </div>
           </article>
 
           <article>
             <span>2024</span>
+
             <div>
               <h3>
                 Machine Learning Approach for the Spectral Classification of
                 Dusty Stellar Sources in the Magellanic Clouds.
               </h3>
+
               <p>EAS Publications Series</p>
             </div>
           </article>
 
           <article>
             <span>2023</span>
+
             <div>
               <h3>
                 Spectral identification and classification of dusty stellar
                 sources using spectroscopic and multiwavelength observations
                 through machine learning.
               </h3>
+
               <p>IAU Symposium 368</p>
             </div>
           </article>
@@ -247,6 +353,7 @@
       </section>
 
       <!-- EDUCATION -->
+
       <section id="education" class="section container">
         <div class="section-title">
           <span>05</span>
@@ -256,9 +363,12 @@
         <div class="education">
           <div class="education-item">
             <span>2024 — Present</span>
+
             <div>
               <h3>M.Sc. in Astrophysics & Cosmology</h3>
+
               <p>University of Bologna</p>
+
               <small>
                 Advanced Cosmology · High-Performance Computing · Practical
                 Statistics · Multi-Wavelength Astrophysics Laboratory
@@ -268,9 +378,12 @@
 
           <div class="education-item">
             <span>2019 — 2022</span>
+
             <div>
               <h3>B.Sc. in Physics</h3>
+
               <p>Sharif University of Technology</p>
+
               <small>
                 Cosmology · Quantum Mechanics · Mathematical Physics · Machine
                 Learning
@@ -280,9 +393,12 @@
 
           <div class="education-item">
             <span>2016 — 2019</span>
+
             <div>
               <h3>B.Sc. in Electrical Engineering</h3>
+
               <p>Sharif University of Technology</p>
+
               <small>
                 Signals & Systems · Communication Systems · Electronics
               </small>
@@ -291,24 +407,55 @@
         </div>
       </section>
 
-      <!-- SKILLS -->
+      <!-- SCIENTIFIC SOFTWARE -->
+
       <section class="section container">
         <div class="section-title">
           <span>06</span>
+          <h2>Scientific Software & HPC</h2>
+        </div>
+
+        <div class="software-feature">
+          <div>
+            <p class="project-meta">SOFTWARE PROJECT</p>
+
+            <h3>ClusterPilot</h3>
+          </div>
+
+          <div>
+            <p>
+              Designed and developed an iOS application for managing HPC
+              clusters, providing mobile access to SLURM job monitoring and
+              submission, cluster file management, and SBATCH script
+              configuration through a centralized API layer.
+            </p>
+
+            <a href="/dev/cp/"> View project → </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECHNICAL SKILLS -->
+
+      <section class="section container">
+        <div class="section-title">
+          <span>07</span>
           <h2>Technical Skills</h2>
         </div>
 
         <div class="skills">
           <div>
-            <h3>Scientific Computing</h3>
+            <h3>Scientific Computing & HPC</h3>
+
             <p>
-              Python · NumPy · SciPy · Astropy · C/C++ · Fortran · MATLAB · Bash
-              · Git · Linux/HPC · MPI
+              Python · NumPy · SciPy · Astropy · C/C++ · Fortran · Bash · MPI ·
+              Git · Linux/HPC environments
             </p>
           </div>
 
           <div>
-            <h3>Astronomical Data</h3>
+            <h3>Astronomical Data Analysis</h3>
+
             <p>
               Optical Spectroscopy · SLAB · SALVADOR · CASA · Fermi-LAT ·
               Fermipy · Observation Planning · Time-Series Analysis
@@ -317,6 +464,7 @@
 
           <div>
             <h3>Machine Learning</h3>
+
             <p>
               Supervised and unsupervised learning · Neural networks · Deep
               learning
@@ -325,32 +473,97 @@
 
           <div>
             <h3>Software Development</h3>
-            <p>PHP · SQL · MongoDB · Flutter/Dart · Swift</p>
+
+            <p>
+              Swift/SwiftUI · Flutter/Dart · PHP · SQL · MongoDB · REST APIs ·
+              Back-end development
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- HONORS -->
+
+      <section class="section container">
+        <div class="section-title">
+          <span>08</span>
+          <h2>Honors & Activities</h2>
+        </div>
+
+        <div class="honors">
+          <div class="honor-item">
+            <span>01</span>
+            <p>
+              Ranked 103 among 160,000+ participants in the National University
+              Entrance Exam — Mathematics track.
+            </p>
+          </div>
+
+          <div class="honor-item">
+            <span>02</span>
+            <p>Silver Medal — National Astronomy & Astrophysics Olympiad.</p>
+          </div>
+
+          <div class="honor-item">
+            <span>03</span>
+            <p>Bronze Medal — National Astronomy & Astrophysics Olympiad.</p>
+          </div>
+
+          <div class="honor-item">
+            <span>04</span>
+            <p>Financial scholarship for academic excellence — INEF.</p>
+          </div>
+
+          <div class="honor-item">
+            <span>05</span>
+            <p>Member — Young Scholars' Club.</p>
+          </div>
+
+          <div class="honor-item">
+            <span>06</span>
+            <p>
+              Organizing Committee Member — National Observatory Conference,
+              2022.
+            </p>
+          </div>
+
+          <div class="honor-item">
+            <span>07</span>
+            <p>
+              Olympiad Instructor — Astronomy & Astrophysics, Salam High School,
+              2017.
+            </p>
           </div>
         </div>
       </section>
 
       <!-- CONTACT -->
+
       <section id="contact" class="contact container">
         <p class="eyebrow">GET IN TOUCH</p>
-        <h2>Interested in having a chat?</h2>
+
+        <h2>
+          Let's talk about<br />
+          research and collaboration.
+        </h2>
 
         <a class="email" href="mailto:amirhos.masoudnezhad@studio.unibo.it">
           amirhos.masoudnezhad@studio.unibo.it
         </a>
 
         <div class="contact-links">
-          <a href="cv.pdf" target="_blank">CV</a>
-          <a href="https://scholar.google.com/" target="_blank"
-            >Google Scholar</a
-          >
+          <a href="cv.pdf" target="_blank"> CV </a>
+
+          <span> Bologna, Italy </span>
         </div>
       </section>
     </main>
 
     <footer class="container">
-      <span>© 2026 Amirhossein Masoudnezhad</span>
-      <span>Astrophysics · Cosmology · Scientific Computing</span>
+      <span> © 2026 Amirhossein Masoudnezhad </span>
+
+      <span> Astrophysics · Cosmology · Scientific Computing </span>
+      <a href="/dev/"> Developer Page ↗</a>
     </footer>
   </body>
 </html>
