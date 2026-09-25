@@ -675,6 +675,26 @@ h3 {
   border-color: var(--accent);
 }
 
+.section-link {
+  display: inline-block;
+
+  margin-top: 14px;
+
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+
+  color: var(--accent);
+
+  border-bottom: 1px solid transparent;
+
+  transition: border-color 0.2s ease;
+}
+
+.section-link:hover {
+  border-color: var(--accent);
+}
+
 /* ==================================================
    SKILLS
 ================================================== */
