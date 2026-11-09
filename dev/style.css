@@ -736,3 +736,9 @@ footer a:hover {
     gap: 8px;
   }
 }
+
+.education-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
